@@ -16,7 +16,7 @@ A Telegram bot that downloads stickers to your local device when you send them t
 3. Run the bot using Docker:
 
 ```bash
-docker build -t 
+docker build . -t telegram-sticker-downloader 
 docker run -d \
   -v /path/to/local/stickers:/app/stickers \
   -e BOT_TOKEN=your_bot_token_here \
